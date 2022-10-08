@@ -9,8 +9,8 @@ export const GifExpertApp = () => {
     const categoryExist = categories.filter(category => category.toUpperCase() === categoryInput.toUpperCase())
     if (!categoryExist.length) {
       setCategories([
-        ...categories,
-        categoryInput
+        categoryInput,
+        ...categories
       ])
     }
   }

@@ -1,4 +1,4 @@
-import { PropTypes } from "prop-types";
+import PropTypes from "prop-types";
 import { useState } from "react";
 
 export const AddCategory = ({onAddCategory}) => {
@@ -18,9 +18,8 @@ export const AddCategory = ({onAddCategory}) => {
   }
 
   return (
-    <form onSubmit={onAddCategoryI}>
+    <form onSubmit={onAddCategoryI} aria-label='add-category-form'>
       <input type='text' value={categoryInput} onChange={handleCategoryInput}/>
-      <button type="submit" >Agregar</button>
     </form>
   )
 }
